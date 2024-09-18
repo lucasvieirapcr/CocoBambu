@@ -1,0 +1,152 @@
+
+
+.acoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  
+  button {
+    background: #050a30;
+    width: 156px;
+    height: 40px;
+    border-radius: 8px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #cae8ff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #cae8ff;
+    color: #050a30;
+    border: 1px solid #050a30;
+  }
+
+  .salvar{
+    margin-right: 10px;
+  }
+  
+  .criar-pensamentos {
+    margin: 0 20rem;
+  }
+  
+  .criar-pensamentos form {
+    background: #cae8ff;
+  
+    border: none;
+    border-radius: 20px;
+  
+    display: flex;
+    flex-direction: column;
+  
+    padding: 2rem;
+  }
+  
+  .criar-pensamentos form label {
+    color: #050a30;
+    font-weight: bold;
+    margin: 0 0 1rem;
+  }
+  
+  .criar-pensamentos form .input {
+    border: none;
+    height: 40px;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    margin: 0.5rem 0 2rem;
+  }
+  
+  
+  .criar-pensamentos form .textarea {
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    margin: 0.5rem 0 2rem;
+  }
+  
+  .container-radio {
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .modelo {
+    background-color: #050a30;
+    padding: 1rem;
+    max-width: auto;
+    margin: 1rem 0 2rem;
+  }
+  
+  .modelo .conteudo {
+    margin: 1rem auto;
+    color: #cae8ff;
+    word-wrap: break-word;
+  }
+  
+  .modelo .book {
+    word-wrap: break-word;
+    color: #cae8ff;
+  }
+  
+  .radio {
+    margin: 0;
+  }
+  
+  .modelo1 {
+    box-shadow: 8px 8px 0px #154580;
+  }
+  
+  .modelo2 {
+    box-shadow: 8px 8px 0px #6BD1FF;
+  }
+  
+  .modelo3 {
+    box-shadow: 8px 8px 0px #84EEC1;
+  }
+  
+  input[type='radio'] {
+    display: none;
+  }
+  
+  .radio-modelo label {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+  
+  .custom-radio {
+    border: 1px solid #154580;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+  }
+  
+  .custom-radio,
+  span {
+    transition: 0.5s ease;
+    color: #154580;
+  }
+  
+  .custom-radio span {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: transparent;
+    border-radius: 50%;
+  }
+  
+  input[type='radio']:checked+.custom-radio {
+    border-color: #154580;
+  }
+  
+  input[type='radio']:checked+.custom-radio span {
+    background: #154580;
+  }

@@ -44,8 +44,6 @@ export class ListaLivrosComponent {
       map(resultado => resultado.items ?? []),
       map((items) => this.livrosResultadoParaLivros(items)),
       catchError((erro) => {
-        // this.mensagemErro ='Ops, ocorreu um erro. Recarregue a aplicação!'
-        // return EMPTY
         console.log(erro)
         return throwError(() => new Error(this.mensagemErro ='Ops, ocorreu um erro. Recarregue a aplicação!'))
       })

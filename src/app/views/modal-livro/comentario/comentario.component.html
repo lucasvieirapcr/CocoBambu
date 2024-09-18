@@ -1,0 +1,39 @@
+<section class="container criar-pensamentos ff-inter">
+    <header class="header">
+        <h2>Deixe seu comentário</h2>
+    </header>
+    <form>
+        <label for="book">Livro</label>
+        <input
+            type="textarea"
+            class="input"
+            id="book"
+            name="book"
+            placeholder="Digite o nome do livro"
+            [(ngModel)]="comentario.book"
+        >
+        <label for="comentario">Comentário</label>
+        <input
+            type="textarea"
+            class="input"
+            id="comentario"
+            name="comentario"
+            placeholder="Digite um comentário"
+            [(ngModel)]="comentario.conteudo"
+        >
+        
+        <h2>Seu comentário: </h2>
+        <div class="modelo">
+            <div class="modelo modelo2 ff-roboto-mono">
+              <p class="book">{{ comentario.book }}</p>
+              <p class="conteudo"><b>{{ comentario.conteudo }}</b></p>
+            </div>
+          </div>
+        
+        <div class="acoes">
+            <button (click)="criarComentario()" class="botao salvar">Salvar</button>
+            <button routerLink="/lista-livros" (click)="cancelar()" class="botao">Cancelar</button>
+        </div>
+
+    </form>
+</section>
