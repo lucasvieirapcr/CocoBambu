@@ -1,0 +1,27 @@
+footer {
+  background-color: #050a30;
+  height: 83px;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  color: #cae8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+ img {
+  height: 82px;
+  margin-right: 80px;
+}
+
+span {
+  margin-right: 0.5rem;
+  margin-top: 0.75rem;
+  font-size: 36px;
+}
+
+
+
